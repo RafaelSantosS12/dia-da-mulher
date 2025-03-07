@@ -1,5 +1,9 @@
 // Adicionando elementos
 const botaoClique = document.querySelector("#clique");
+const box = document.querySelector(".container");
+const imagens = document.querySelectorAll(".container img");
+
+let contador = 0;
 
 //Adicionando eventos
 botaoClique.addEventListener("click", () => {
@@ -11,7 +15,15 @@ const esconderBotao = () => {
     botaoClique.style.display = "none";
 }
 
-const aparecerMensagem = () => {
-    
+function slider() {
+    contador++;
+
+    if(contador > imagens.length - 1) {
+        contador = 0;
+    }
+
+    box.style.transform = `translateX(${-contador * 386}px)`;
 }
+
+setInterval(slider, 1500);
 
