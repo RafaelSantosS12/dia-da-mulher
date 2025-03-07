@@ -25,8 +25,6 @@ body{
     display: flex;
     justify-content: center;
     align-items: center;
-    position: absolute;
-    bottom: 250px;
 }
 
 
@@ -41,9 +39,45 @@ body{
     cursor: pointer;
     opacity: 80%;
     transition: transform .3s;
+    position: absolute;
+    bottom: 250px;
 }
 
-#clique:hover{
+#clique2{
+    display: flex;
+    background-color: red;
+    color: white;
+    padding: 18px 27px;
+    font-weight: 600;
+    font-size: 20px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    opacity: 80%;
+    transition: transform .3s;
+    position: absolute;
+    bottom: 50px;
+    left: 40px;
+}
+
+#clique3{
+    display: flex;
+    background-color: red;
+    color: white;
+    padding: 18px 27px;
+    font-weight: 600;
+    font-size: 20px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    opacity: 80%;
+    transition: transform .3s;
+    position: absolute;
+    top: 40px;
+    right: 30px;
+}
+
+#clique:hover, #clique2:hover, #clique3:hover{
     opacity: 100%;
     transform: scale(1.1);
 }
