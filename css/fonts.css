@@ -1,0 +1,31 @@
+/*FONTES*/
+@font-face {
+    font-family: 'Montserrat';
+    src: url('/assets/fonts/Montserrat/static/Montserrat-Bold.ttf') format('truetype');
+    font-style: normal;
+    font-weight: 700; /* Peso Bold */
+
+    font-family: 'Montserrat';
+    src: url('/assets/fonts/Montserrat/Montserrat-VariableFont_wght.ttf') format('truetype');
+    font-style: normal;
+    font-weight: 400; /* Peso Normal */
+}@font-face {
+    font-family: 'Oxanium';
+    src: url(/assets/fonts/Oxanium/static/Oxanium-Bold.ttf);
+    font-weight: bold;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'Oxanium';
+    src: url(/assets/fonts/Oxanium/static/Oxanium-Regular.ttf);
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'Oxanium';
+    src: url(/assets/fonts/Oxanium/static/Oxanium-ExtraBold.ttf);
+    font-weight: bolder;
+    font-style: normal;
+}
