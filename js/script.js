@@ -1,25 +1,82 @@
+console.log("Arquivo carregado!");
+
 // Adicionando elementos
-const botaoClique = document.querySelector("#clique");
+const botaoClique1 = document.querySelector("#clique");
+const botaoClique2 = document.querySelector("#clique2");
+const botaoClique3 = document.querySelector("#clique3");
 const box = document.querySelector(".container");
 const imagens = document.querySelectorAll(".container img");
 const sectionBtn = document.querySelector("#sec-button");
 const sectionMsg = document.querySelector("#sec-msg");
+const btnVoltar = document.querySelector("#voltar");
 
 let contador = 0;
 
 //Adicionando eventos
-botaoClique.addEventListener("click", () => {
-    esconderBotao();
+botaoClique1.addEventListener("click", () => {
+    esconderBotao1();
+    mostrarBotao2();
+});
+
+botaoClique2.addEventListener("click", () => {
+    esconderBotao2();
+    mostrarBotao3();
+});
+
+botaoClique3.addEventListener("click", () => {
+    esconderBotao3();
     aparecerMensagem();
 });
 
+btnVoltar.addEventListener("click", () => {
+    esconderMensagem();
+    mostrarBotao1();
+});
+
 // Functions
-const esconderBotao = () => {
-    sectionBtn.style.display = "none";
+const mostrarBotao1 = () => {
+    botaoClique1.style.display = "block";
+    console.log("Botão 1 mostrado!");
+}
+
+const esconderBotao1 = () => {
+    botaoClique1.style.display = "none";
+    console.log("Botão 1 escondido!");
+}
+
+const mostrarBotao2 = () => {
+    botaoClique2.style.display = "block";
+    console.log("Botão 2 mostrado!");
+}
+
+const esconderBotao2 = () => {
+    botaoClique2.style.display = "none";
+    console.log("Botão 2 escondido!");
+}
+
+const mostrarBotao3 = () => {
+    botaoClique3.style.display = "block";
+    console.log("Botão 3 mostrado!");
+}
+
+const esconderBotao3 = () => {
+    botaoClique3.style.display = "none";
+    console.log("Botão 3 escondido!");
 }
 
 const aparecerMensagem = () => {
     sectionMsg.style.display = "block";
+    // Criar corações constantemente
+    setInterval(createHeart, 200);
+}
+
+const esconderMensagem = () => {
+    sectionMsg.style.display = "none";
+}
+
+// Função para parar a criação de corações
+function pararCorações() {
+    clearInterval(heartInterval); // Isso vai parar o intervalo
 }
 
 function slider() {
@@ -68,8 +125,5 @@ function createHeart() {
         heart.remove();
     }, 5000);
 }
-
-// Criar corações constantemente
-setInterval(createHeart, 300);
 
 
