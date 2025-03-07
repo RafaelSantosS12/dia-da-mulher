@@ -3,11 +3,15 @@ const botaoClique = document.querySelector("#clique");
 
 //Adicionando eventos
 botaoClique.addEventListener("click", () => {
-    alert("Funcionou");
+    esconderBotao();
 });
 
-//Functions
+// Functions
+const esconderBotao = () => {
+    botaoClique.style.display = "none";
+}
 
-const esconderBotão = () => {
+const aparecerMensagem = () => {
     
 }
+

@@ -21,6 +21,7 @@ html, body{
 
 
 #clique{
+    display: none; /*AQUIIIII*/
     background-color: red;
     color: white;
     padding: 18px 27px;
