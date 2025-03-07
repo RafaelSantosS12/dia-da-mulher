@@ -86,7 +86,7 @@ function slider() {
         contador = 0;
     }
 
-    box.style.transform = `translateX(${-contador * 386}px)`;
+    box.style.transform = `translateX(${-contador * 300}px)`;
 }
 
 setInterval(slider, 1500);
